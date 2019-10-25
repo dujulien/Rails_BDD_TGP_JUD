@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FREEDOC PROJECT
 
-Things you may want to cover:
+This project aims at creating a relational database for the Gossip Project.
 
-* Ruby version
+To feed this database, please type the following commands in your Terminal (in the right order) :
+	- $rails db:migrate VERSION=0
+	- $rails db:migrate
+	- $rails db:seed
 
-* System dependencies
+To test the relations between the tables, you could try the following entries in the rails console ($rails c).
 
-* Configuration
+	- User.find(3).gossips
+	- User.find(2).received_messages
+	- User.find(8).sent_messages
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
